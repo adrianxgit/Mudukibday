@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Mudukki 🎉</title>
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #ffdee9, #b5fffc);
+      color: #333;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      margin-top: 50px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #e91e63;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      text-align: justify;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-style: italic;
+      color: #555;
+    }
+
+    #music-control {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- 💖 Image Section -->
+  <div style="text-align: center;">
+    <img src="us.jpg" alt="A special memory" style="max-width: 100%; border-radius: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.3); margin-bottom: 20px;" />
+  </div>
+
+  <!-- 🎉 Title -->
+  <h1>Happy Birthday, Mudukki! 💙</h1>
+
+  <!-- 💌 Message -->
+  <p>
+    18 years of life, and every moment you’ve lived so far has made you into the strong, beautiful person you are today.
+    <br><br>
+    I know I’ve given you reasons to be hurt, to cry, and to doubt things. But even through all that, you stayed — and that means more to me than words can ever explain.
+    <br><br>
+    You’ve always had a way of understanding me, even when I couldn’t understand myself. When you speak, when you open up, when you just be <i>you</i> — I never get bored, not even for a second.
+    <br><br>
+    I’m really lucky to have you in my life. Not everyone gets to meet someone like you — someone who cares deeply, loves fearlessly, and forgives with a heart that’s too big for this world.
+    <br><br>
+    This is your year. Your adult life is just beginning. Don’t carry old pain with you — not from me, not from anyone.
+    <br><br>
+    Move forward with hope, with strength, and with that fire in your heart. You deserve only the best things, and I truly believe you'll achieve them — because I know how determined you are.
+    <br><br>
+    Even if I couldn't support you in every way, I’ll always be here — as your Best friend.
+    <br><br>
+    So once again, Happy Birthday, Nabeeha. Keep shining, keep growing, and never forget your worth.
+    <br><br>
+    <b>Insha'Allah, all the good things in life find their way to you. 🌸</b>
+  </p>
+
+  <!-- 🙏 Footer -->
+  <div class="footer">
+    With love and care,<br>
+    Aman
+  </div>
+
+  <!-- 🎵 Music Control -->
+  <button id="music-control">Play Music 🎵</button>
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const btn = document.getElementById("music-control");
+    const music = document.getElementById("bg-music");
+    let isPlaying = false;
+
+    btn.addEventListener("click", () => {
+      if (!isPlaying) {
+        music.play();
+        btn.textContent = "Pause Music ⏸️";
+      } else {
+        music.pause();
+        btn.textContent = "Play Music 🎵";
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+</body>
+</html>
